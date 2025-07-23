@@ -6,7 +6,7 @@ public class Linear_Search {
                 return i;
             }
         }
-        return 0;
+        return -1;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -14,6 +14,13 @@ public class Linear_Search {
         System.out.println("Enter the target");
         int n = sc.nextInt();
         int ans = Search(arr,n);
-        System.out.println(ans);
+        if(ans==-1){
+             System.out.println("Element not found!!");
+    }
+    else{
+         System.out.println(n +"Element found at index"+ ans);
+    }
+
     }
 }
+
